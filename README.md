@@ -30,6 +30,8 @@ This is a weather app built in JavaScript using Openweather API. A user can type
 
 ## Live Demo
 
+[Live Demo Link](https://hillaryokello.github.io/weather-app-js/)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
