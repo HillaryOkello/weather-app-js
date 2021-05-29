@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="../src/assets/style.css">
+<title>Weather App</title>
+</head>
+<body>
+
+  <header id="content">
+    <nav class="navbar justify-content-center bg-primary">
+      <h1 class="text-white header">
+        <i class="fas fa-cloud-sun m-2"></i>
+        Weather App
+        <i class="fas fa-cloud-showers-heavy m-2"></i>
+      </h1>
+    </nav>
+  </header>
+
+  
+  <main class="justify-content-center content">
+    <div class="form d-flex justify-content-center pt-5">
+      <form id="searchForm">
+        <input id="input-value" type="text" placeholder="Search for a city" autofocus>
+        <button id="searchBtn" class="btn btn-primary" type="submit">SUBMIT</button>
+        <span id="msg" class="msg"></span>
+      </form>
+    </div>
+    <section class="weather-section" id="weather-section">
+      <div class="container">
+        <ul class="cities"></ul>
+      </div>
+    </section>
+  </main>
+
+<script src="main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>

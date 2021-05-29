@@ -1,0 +1,31 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HillaryOkello/weather-app-js.git"
+  },
+  "author": "Hillary Okello",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HillaryOkello/weather-app-js/issues"
+  },
+  "homepage": "https://github.com/HillaryOkello/weather-app-js#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.3",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.19.0",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0"
+  }
+}
