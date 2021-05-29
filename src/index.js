@@ -13,4 +13,7 @@ searchBtn.addEventListener('click', async () => {
   if (searchInput.value === '') return;
   const apiData = await api.getData(searchInput.value);
   UI.setSearchData(apiData);
+  searchInput.textContent = '';
+  searchForm.reset();
+  searchInput.focus();
 });
