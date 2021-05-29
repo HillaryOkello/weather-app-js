@@ -5,10 +5,10 @@
   box-sizing: border-box;
 }
 
-main {
-  background: url(https://images.unsplash.com/photo-1566667937341-0d579faa4597?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTE0fHx3ZWF0aGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60) center;
+body {
+  background: url(https://images.unsplash.com/photo-1566667937341-0d579faa4597?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTE0fHx3ZWF0aGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60) no-repeat;
   background-size: cover;
-  height: auto;
+  height: 100%;
 }
 
 button {
