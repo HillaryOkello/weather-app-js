@@ -8,7 +8,7 @@ const UI = (() => {
     const list = document.querySelector('.weather-section .cities');
     const li = document.createElement('li');
     li.classList.add('city');
-    const markup = `
+    const weatherDetails = `
       <h2 class="city-name" data-name="${apiData.name},${apiData.sys.country}">
         <span>${apiData.name}</span>
         <sup>${apiData.sys.country}</sup>
@@ -20,7 +20,7 @@ const UI = (() => {
         <figcaption>${apiData.weather[0].description}</figcaption>
       </figure>
     `;
-    li.innerHTML = markup;
+    li.innerHTML = weatherDetails;
     list.appendChild(li);
   }
 
