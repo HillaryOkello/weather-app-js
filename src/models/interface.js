@@ -18,6 +18,8 @@ const UI = (() => {
       <figure>
         <img class="city-icon" src=${icon} alt=${apiData.weather[0]['apiData.main']}>
         <figcaption>${apiData.weather[0].description}</figcaption>
+        <figcaption>Humidity ${apiData.main.humidity}%</figcaption>
+        <figcaption>Pressure ${apiData.main.pressure}hPa</figcaption>
       </figure>
     `;
     li.innerHTML = weatherDetails;
