@@ -4,10 +4,11 @@ const api = (() => {
       main,
       name,
       sys,
+      units,
       weather,
     } = data;
     return {
-      main, name, sys, weather,
+      main, name, sys, units, weather,
     };
   }
 

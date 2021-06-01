@@ -13,7 +13,7 @@ const UI = (() => {
         <span>${apiData.name}</span>
         <sup>${apiData.sys.country}</sup>
       </h2>
-      <div id="city-temp" class="city-temp">${Math.round(apiData.main.temp)}<sup>°C</sup>
+      <div id="city-temp-${apiData.name}" class="city-temp">${Math.round(apiData.main.temp)}<sup>°C</sup>
       </div>
       <figure>
         <img class="city-icon" src=${icon} alt=${apiData.weather[0]['apiData.main']}>
@@ -21,17 +21,25 @@ const UI = (() => {
         <figcaption>Humidity ${apiData.main.humidity}%</figcaption>
         <figcaption>Pressure ${apiData.main.pressure}hPa</figcaption>
       </figure>
-      <button id="unit-button" class="btn-primary p-1">Fahrenheit</button>
     `;
+    const fahrenButton = document.createElement('button');
+    fahrenButton.classList.add('btn-primary', 'p-1');
+    fahrenButton.id = `unit-button-${apiData.name}`;
+    fahrenButton.textContent = 'Fahrenheit';
     li.innerHTML = weatherDetails;
+    li.appendChild(fahrenButton);
     list.appendChild(li);
 
     function temperatureConverter(tempVal) {
       tempVal = Math.round(apiData.main.temp);
-      document.getElementById('city-temp').innerHTML = `${Math.round(tempVal * 1.8 + 32)}<sup>Fa</sup>`;
+      const tempConv = document.getElementById(`city-temp-${apiData.name}`);
+      if (tempConv.textContent.includes('°C')) {
+        tempConv.innerHTML = `${Math.round(tempVal * 1.8 + 32)}<sup>Fa</sup>`;
+      } else {
+        tempConv.innerHTML = `${Math.round(apiData.main.temp)}<sup>°C</sup>`;
+      }
     }
 
-    const fahrenButton = document.getElementById('unit-button');
     fahrenButton.onclick = temperatureConverter;
   }
 
