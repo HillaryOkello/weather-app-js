@@ -10,6 +10,10 @@ body {
   height: 100%;
 }
 
+.header i {
+  color: #fff;
+}
+
 button {
   cursor: pointer;
 }
