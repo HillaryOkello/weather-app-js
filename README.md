@@ -3,7 +3,7 @@
 # Weather App
 
 ![Top Page Screenshot](./dist/assets/weather-app.png)
-This is a weather app built in JavaScript using Openweather API to practice working with APIs in JavaScript.
+> This is a weather app built in JavaScript using Openweather API to practice working with APIs in JavaScript.
 
 ## Table of Contents
 
